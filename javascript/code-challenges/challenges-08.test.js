@@ -54,7 +54,16 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-  return (charArray.sort((a, b) => a.children.length - b.children.length)).sort((a, b)=> a.name - b.name);
+  const sortByChildren = (charArray) => {
+    return charArray.sort((previous, current) => {
+      let difference = previous.children.length - current.children.length;
+      if(difference !== 0) return difference;
+      else {
+        if(previous.house < current.house) return -1;
+        if(previous.house > current.house) return 1;
+        else return 0;
+      }
+    });
 
 };
 
