@@ -54,16 +54,15 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-  const sortByChildren = (charArray) => {
-    return charArray.sort((previous, current) => {
-      let difference = previous.children.length - current.children.length;
-      if(difference !== 0) return difference;
-      else {
-        if(previous.house < current.house) return -1;
-        if(previous.house > current.house) return 1;
-        else return 0;
-      }
-    });
+  return charArray.sort((accumulator, currentValue) => {
+    let order = accumulator.children.length - currentValue.children.length;
+    if(order !== 0) return order;
+    else {
+      if(accumulator.house < currentValue.house) return -1;
+      if(accumulator.house > currentValue.house) return 1;
+      else return 0;
+    }
+  });
 
 };
 
