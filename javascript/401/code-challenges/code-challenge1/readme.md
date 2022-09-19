@@ -10,4 +10,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 Created a function of array that loops through the length of the array and decrement greater one swaps with the smaller one and it returns.
 
-
+dfgglsdjgflksjdgjdlsjglkdsjlgjdsldsljgl
