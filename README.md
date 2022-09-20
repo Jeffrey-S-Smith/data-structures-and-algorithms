@@ -24,4 +24,4 @@ To run your tests
 
 ## WhiteBoard
 
-[Code Challenge WhiteBoard: Class 01](javascript/challenge-readme.md)
+[Code Challenge WhiteBoard: Class 01](javascript/401/code-challenges/code-challenge1/readme.md)
