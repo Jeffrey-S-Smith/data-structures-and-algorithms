@@ -26,4 +26,4 @@ To run your tests
 
 [Code Challenge WhiteBoard: Class 01](javascript/401/code-challenges/code-challenge1/readme.md),
 [Code Challenge WhiteBoard: Class 02](javascript/401/code-challenges/code-challenge2/readme.md),
-[Code Challenge WhiteBoard: Class02](javascript/401/code-challenges/code-challenge2/img/20220920_145803.jpg)
+![Code Challenge WhiteBoard: Class02](javascript/401/code-challenges/code-challenge2/img/20220920_145803.jpg)
