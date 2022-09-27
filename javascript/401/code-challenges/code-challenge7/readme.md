@@ -37,7 +37,7 @@ Write tests to prove the following functionality:
 
 ## Whiteboard Process
 
-![White Board6]()
+![White Board7](img/lab7.jpg)
 
 ## Approach & Efficiency
 
@@ -45,4 +45,4 @@ Write tests to prove the following functionality:
 
 Worked with Jordan Yamada to write the code.
 
-Test- npm test linked.test.js
+Test- npm test code-challenge7
