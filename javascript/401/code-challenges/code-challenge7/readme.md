@@ -37,7 +37,7 @@ Write tests to prove the following functionality:
 
 ## Whiteboard Process
 
-![White Board6]()
+![White Board6](img/lab7.jpg)
 
 ## Approach & Efficiency
 
