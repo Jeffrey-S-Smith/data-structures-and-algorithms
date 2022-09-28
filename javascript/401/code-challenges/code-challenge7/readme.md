@@ -45,4 +45,4 @@ Write tests to prove the following functionality:
 
 Worked with Jordan Yamada to write the code.
 
-Test- npm test linked.test.js
+Test- npm test code-challenge7
