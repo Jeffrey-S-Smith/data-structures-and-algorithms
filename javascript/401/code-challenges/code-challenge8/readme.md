@@ -37,12 +37,20 @@ Write tests to prove the following functionality:
 
 ## Whiteboard Process
 
-![White Board6](img/lab)
+![White Board6](img/lab08.jpg)
+![White Board6](img/lab08-1.jpg)
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+I took the approach to limit the function to only a single loop, for time and space efficiency.
 
-Worked with Jordan Yamada to write the code.
+## Solution
+
+Worked with Rhea Mimi Carillo, Jordan Yamada, Alfredo Ortiz, Amy Pierce, and Jeffery Smith on this solution
+
+| `Arg list1`      | `Arg list2` | `Output`      |
+| ----------- | ----------- | ----------- |
+| {1} -> {3} -> {2} -> null      | {5} -> {9} -> {4} -> null       | {1} -> {5} -> {3} -> {9} -> {2} -> {4} -> null      |
+| { }   | {1} -> {5} -> {3} -> {9} -> {2} -> {4} -> null        | undefined   |
 
 Test- npm test code-challenge8

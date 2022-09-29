@@ -1,64 +1,82 @@
-const { LinkedList, zipLists } = require ('./link.js');
+'use strict';
 
-function llSetUp(arr, ll) {
-  let newll = ll;
-  arr.forEach(value => {
-    newll.append(value);
-    console.log(newll.toString());
-  });
-  return newll;
-}
+const { LinkedList, Node, zipLists } = require('./link.js');
 
-describe('Testing Linked List Zip function', () => {
-  it('should create a new ll equal to null if both ll are empty', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    let list = zipLists(ll1, ll2);
-    expect(list.head.value).toEqual(null);
-  });
 
-  it('should create a new ll equal to ll1 if ll2 is empty', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    llSetUp(['a', 'b', 'c'], ll1);
-    let list = zipLists(ll1, ll2);
-    console.log(list);
-    expect(list.toString()).toEqual('{ a } -> { b } -> { c } -> NULL');
-  });
+describe('LinkedList Zip function', () =>
+{
+  describe('things', () =>
+  {
+    // test to see if zip works when first linked list is longer than the second
+    it('should return a linked list with nodes interleaved', () =>
+    {
+      // make a linked list with nodes
+      let shortList = new LinkedList(new Node('banana', new Node('pizza')));
 
-  it('should create a new ll equal to ll2 if ll1 is empty', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    llSetUp(['x', 'y', 'z'], ll2);
-    let list = LinkedList.zipLists(ll1, ll2);
-    expect(list.toString()).toEqual('{ x } -> { y } -> { z } -> NULL');
-  });
+      // make a longer linked list with more nodes
+      let longList = new LinkedList(new Node('nacho', new Node('donut', new Node('weed-rat stew'))));
 
-  it('should create a new ll with two ll of equal lengths', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    llSetUp(['a', 'b', 'c'], ll1);
-    llSetUp(['x', 'y', 'z'], ll2);
-    let list = LinkedList.zipLists(ll1, ll2);
-    expect(list.toString()).toEqual('{ a } -> { x } -> { b } -> { y } -> { c } -> { z } -> NULL');
+      // run zipLists()
+      let zippedList = zipLists(shortList, longList);
 
-  });
+      // expect them to be interleaved
+      expect(zippedList.toString()).toEqual('{ banana } -> { nacho } -> { pizza } -> { donut } -> { weed-rat stew } -> NULL');
+    });
 
-  it('should create a new ll with ll1 shorter than ll2', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    llSetUp(['a', 'b'], ll1);
-    llSetUp(['x', 'y', 'z'], ll2);
-    let list = LinkedList.zipLists(ll1, ll2);
-    expect(list.toString()).toEqual('{ a } -> { x } -> { b } -> { y } -> { z } -> NULL');
-  });
+    // test to see if zip works when second linked list is longer than the first
+    it('should return a linked list with nodes interleaved', () =>
+    {
+      // make a linked list with nodes
+      let looooongList = new LinkedList(new Node('coffee', new Node('tea', new Node('kombucha', new Node('boba')))));
 
-  it('should create a new ll with ll2 shorter than ll1', () => {
-    const ll1 = new LinkedList;
-    const ll2 = new LinkedList;
-    llSetUp(['a', 'b', 'c'], ll1);
-    llSetUp(['x', 'y'], ll2);
-    let list = LinkedList.zipLists(ll1, ll2);
-    expect(list.toString()).toEqual('{ a } -> { x } -> { b } -> { y } -> { c } -> NULL');
+      // make a longer linked list with more nodes
+      let soupList = new LinkedList(new Node('chowder', new Node('potage', new Node('ramen'))));
+
+      // run zipLists()
+      let zippedList = zipLists(looooongList, soupList);
+
+      // expect them to be interleaved
+      expect(zippedList.toString()).toEqual('{ coffee } -> { chowder } -> { tea } -> { potage } -> { kombucha } -> { ramen } -> { boba } -> NULL');
+    });
+
+    // test for when one linked list is null
+    it('should return undefined', () =>
+    {
+      // make a linked list with nodes
+      let emptyList = new LinkedList();
+
+      // make a longer linked list with more nodes
+      let notEmptyList = new LinkedList(new Node('chowder', new Node('potage', new Node('ramen'))));
+
+      // run zipLists()
+      let zippedList = zipLists(emptyList, notEmptyList);
+
+      // expect them to be interleaved
+      expect(zippedList).toEqual(undefined);
+    });
+
+    // test to see if zip stops when linked list's head is null or undefined
+    it('should return null', () =>
+    {
+      // make a linked list with nodes
+      let emptyList = new LinkedList();
+
+      // make a longer linked list with more nodes
+      let emptierList = new LinkedList();
+
+      // run zipLists()
+      let zippedList = zipLists(emptyList, emptierList);
+
+      // expect them to be interleaved
+      expect(zippedList).toEqual(undefined);
+    });
   });
 });
+
+
+
+
+
+
+
+
