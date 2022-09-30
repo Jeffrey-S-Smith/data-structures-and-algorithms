@@ -49,4 +49,3 @@ I took the approach to limit the function to only a single loop, for time and sp
 Worked with Rhea Mimi Carillo, Jordan Yamada, Alfredo Ortiz, Amy Pierce, and Jeffery Smith on this solution
 
 Test- npm test stack-and-queue
-
