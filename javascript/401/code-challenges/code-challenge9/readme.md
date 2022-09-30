@@ -1,4 +1,4 @@
-# Linked-Lists-Insertions
+# Stack and Queue
 
 ## Challenge
 
@@ -28,12 +28,20 @@ You have access to the Node class and all the properties on the Linked List clas
 
 Write tests to prove the following functionality:
 
-- Can successfully add a node to the end of the linked list
-- Can successfully add multiple nodes to the end of a linked list
-- Can successfully insert a node before a node located i the middle of a linked list
-- Can successfully insert a node before the first node of a linked list
-- Can successfully insert after a node in the middle of the linked list
-- Can successfully insert a node after the last node of the linked list
+- Can successfully push onto a stack
+- Can successfully push multiple values onto a stack
+- Can successfully pop off the stack
+- Can successfully empty a stack after multiple pops
+- Can successfully peek the next item on the stack
+- Can successfully instantiate an empty stack
+- Calling pop or peek on empty stack raises exception
+- Can successfully enqueue into a queue
+- Can successfully enqueue multiple values into a queue
+- Can successfully dequeue out of a queue the expected value
+- Can successfully peek into a queue, seeing the expected value
+- Can successfully empty a queue after multiple dequeues
+- Can successfully instantiate an empty queue
+- Calling dequeue or peek on empty queue raises exception
 
 ## Whiteboard Process
 
@@ -46,6 +54,6 @@ I took the approach to limit the function to only a single loop, for time and sp
 
 ## Solution
 
-Worked with Rhea Mimi Carillo, Jordan Yamada, Alfredo Ortiz, Amy Pierce, and Jeffery Smith on this solution
+Worked with Rhea Mimi Carillo, Jordan Yamada, Alfredo Ortiz, Amy Pierce, on this solution
 
 Test- npm test stack-and-queue
