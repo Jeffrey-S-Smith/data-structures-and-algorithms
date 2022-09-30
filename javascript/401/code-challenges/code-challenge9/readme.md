@@ -96,7 +96,7 @@ Write tests to prove the following functionality:
 
 ## Whiteboard Process
 
-![White Board Stack and Queue]()
+![White Board Stack and Queue](img/code-challenge9 stack-and-queue.jpg)
 
 ## Approach & Efficiency
 
