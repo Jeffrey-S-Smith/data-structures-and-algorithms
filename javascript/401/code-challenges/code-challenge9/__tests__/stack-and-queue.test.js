@@ -1,5 +1,5 @@
 'use strict';
-const { Stack, Queue } = require('./stack-and-queue.js');
+const { Stack, Queue } = require('../stacks-queues/stack-and-queue');
 
 
 describe('Testing Stack Methods:', () => {
