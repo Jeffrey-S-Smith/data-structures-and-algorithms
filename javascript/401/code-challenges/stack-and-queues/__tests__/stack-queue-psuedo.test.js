@@ -1,6 +1,6 @@
 'use strict';
 
-const { PseudoQueue } = require('../stack-and-queue');
+const { PseudoQueue } = require('../stacks-queues/stack-and-queue.js');
 
 describe('Testing Queue Methods:', () => {
   it('should instantiate an empty queue', () => {
