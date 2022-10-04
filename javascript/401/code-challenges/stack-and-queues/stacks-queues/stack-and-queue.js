@@ -17,11 +17,15 @@ class Stack {
     node.next = this.top;
     this.top = node;
   }
+
   pop() {
-    if (this.top === null) return 'Exception';
-    let value = this.top.value;
-    this.top = this.top.next;
-    return value;
+    if (this.top === null) {
+      return 'Exception';
+    } else {
+      let value = this.top.value;
+      this.top = this.top.next;
+      return value;
+    }
   }
   peek() {
     if (this.top === null) return 'Exception';
