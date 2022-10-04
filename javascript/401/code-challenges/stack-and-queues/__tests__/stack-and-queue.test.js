@@ -22,48 +22,51 @@ describe('Testing Stack Methods:', () => {
     stack.push('a');
     stack.push('b');
     stack.push('c');
-    let fullStack = JSON.stringify(stack);
-
-    it('Can successfully empty a stack after multiple pops', () => {
-      let stack = new Stack;
-      stack.push('a');
-      stack.push('b');
-      stack.push('c');
-      let fullStack = JSON.stringify(stack);
-      stack.pop();
-      stack.pop();
-      stack.pop();
-      expect(fullStack).toEqual('{"top":{"value":"c","next":{"value":"b","next":{"value":"a","next":null}}}}');
-      expect(stack.top).toBeNull();
-    });
-
-    it('Can successfully peek the next item on the stack', () => {
-      let stack = new Stack;
-      stack.push('a');
-      stack.push('b');
-      stack.push('c');
-      let result = stack.peek();
-      expect(result).toEqual('c');
-    });
-
-    it('Can successfully instantiate an empty stack', () => {
-      let stack = new Stack;
-      expect(stack.top).toBeNull();
-      expect(stack).toBeInstanceOf(Stack);
-    });
-
-    let result = stack.pop();
-    expect(fullStack).toEqual('{"top":{"value":"c","next":{"value":"b","next":{"value":"a","next":null}}}}');
+    stack.pop();
     expect(JSON.stringify(stack)).toEqual('{"top":{"value":"b","next":{"value":"a","next":null}}}');
+  });
+
+
+  it('Can successfully empty a stack after multiple pops', () => {
+    let stack = new Stack;
+    stack.push('a');
+    stack.push('b');
+    stack.push('c');
+    let fullStack = JSON.stringify(stack);
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    expect(fullStack).toEqual('{"top":{"value":"c","next":{"value":"b","next":{"value":"a","next":null}}}}');
+    expect(stack.top).toBeNull();
+  });
+
+  it('Can successfully peek the next item on the stack', () => {
+    let stack = new Stack;
+    stack.push('a');
+    stack.push('b');
+    stack.push('c');
+    let result = stack.peek();
     expect(result).toEqual('c');
   });
 
-  it('Calling pop or peek on empty stack raises exception', () => {
+  it('Can successfully instantiate an empty stack', () => {
     let stack = new Stack;
-    let result = stack.pop();
-    expect(result).toEqual('Exception');
+    expect(stack.top).toBeNull();
+    expect(stack).toBeInstanceOf(Stack);
   });
+
+  let result = stack.pop();
+  expect(stack).toEqual('{"top":{"value":"c","next":{"value":"b","next":{"value":"a","next":null}}}}');
+  expect(JSON.stringify(stack)).toEqual('{"top":{"value":"b","next":{"value":"a","next":null}}}');
+  expect(result).toEqual('c');
 });
+
+it('Calling pop or peek on empty stack raises exception', () => {
+  let stack = new Stack;
+  let result = stack.pop();
+  expect(result).toEqual('Exception');
+});
+
 
 
 ///////////////////////////////////////////////////////////////////////////
