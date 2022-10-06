@@ -96,7 +96,7 @@ Write tests to prove the following functionality:
 
 ## Whiteboard Process
 
-![WhiteBoardStackandQueue](img/code-challenge9stack-and-queue.jpg)
+![White Board Stack and Queue](img/code-challenge9 stack-and-queue.jpg)
 
 ## Approach & Efficiency
 
@@ -105,36 +105,3 @@ Write tests to prove the following functionality:
 Worked with Rhea Mimi Carillo, Jordan Yamada, Alfredo Ortiz, Amy Pierce, and Jeffery Smith on this solution
 
 Test- npm test stack-and-queue
-
-# Stacks and Queue Pseudo
-
-# Challenge Summary
-
-Implement a Queue using two Stacks.
-
-## Whiteboard Process
-
-![WhiteBoardStackandQueue](img/codechallenge11.jpg)
-
-## Approach & Efficiency
-
-Enqueue
-The big O space/time complexity if the front stack is loaded is O(n) because it needs to cycle through the stack as many times as there are nodes in the stack. If the back stack is loaded, it is O(1) because it will add to the stack regardless of how many times it needs to be performed.
-Dequeue
-The big O space/time complexity if the front stack is loaded is O(n) because it will need to pop/push the nodes to the front of the stack. It will have to scale with n because it has to cycle through each value. If the back stack is loaded it will be O(1) because it will add to the stack regardless of how many times it needs to be performed.
-
-Test- npm test stack-and-queue
-
-## stack-queue-brackets
-
-## Write a function called validate brackets
-
-## Arguments: string
-
-## Return: boolean
-
-## Representing whether or not the brackets in the string are balanced
-
-![WhiteBoardStackandQueue](img/stackqueuebrackets.jpg)
-
-Test- npm test stack-and-queue 
