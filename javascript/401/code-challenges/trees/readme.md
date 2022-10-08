@@ -1,5 +1,7 @@
 # Trees
 
+## Test npm test trees
+
 ## How can we read all values in a Tree
 
 #### Depth First: Read all the sub children on one side of the tree, before reading children of the other side
