@@ -1,6 +1,24 @@
 
 # Tree
 
+## tree-breadth-first.js
+
+* Test npm test trees
+
+## Feature Tasks
+
+* Write a function called breadth first
+* Arguments: tree
+* Return: list of all values in the tree, in the order they were encountered
+
+### NOTE: Traverse the input tree using a Breadth-first approach
+
+Input:
+![tree-breath-first](img/Breadth-first.jpg)
+
+Output
+[2,7,5,2,6,9,5,11,4]
+
 * Test npm test trees
 
 ## Tree-max
