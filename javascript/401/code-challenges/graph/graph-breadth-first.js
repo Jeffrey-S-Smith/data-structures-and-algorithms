@@ -16,7 +16,6 @@ class Graph {
   }
   addEdge(vertex1, vertex2, weight = null) {
     if (!this.adjacencyList.get(vertex1) || !this.adjacencyList.get(vertex2)) return 'Not in a graph';
-
     const v1Edges = this.adjacencyList.get(vertex1);
     const v2Edges = this.adjacencyList.get(vertex2);
 
@@ -29,12 +28,14 @@ class Graph {
     return this.adjacencyList.get(vertex);
   }
   breadthFirst(vertex) {
+
     if (!vertex) return null;
     const queue = [vertex];
     const visited = [];
     let current;
 
     while (queue.length) {
+      console.log(queue.length);
       current = queue.pop();
       let edges = this.adjacencyList.get(current);
       for (let i = 0; i < edges.length; i++) {
@@ -44,25 +45,6 @@ class Graph {
     }
     return visited;
   }
-
-  depthFirst(vertex) {
-    if (!vertex) return null;
-    const visited = [];
-
-    const traversal = (vertex) => {
-      let edges = this.adjacencyList.get(vertex);
-      if (edges) {
-        visited.push(vertex);
-        for (let i = 0; i < edges.length; i++) {
-          if (!visited.includes(edges[i][0])) {
-            traversal(edges[i][0]);
-          }
-        }
-      }
-    };
-
-    traversal(vertex);
-    return visited;
-  }
 }
+
 module.exports = Graph;
