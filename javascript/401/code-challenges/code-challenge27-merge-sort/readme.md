@@ -7,7 +7,7 @@ Once you are done with your article, code a working, tested implementation of Me
 
 ## Whiteboard Process
 ![UML](img/code-challenge27.jpg)
-)
+
 
 ## Approach & Efficiency
 
