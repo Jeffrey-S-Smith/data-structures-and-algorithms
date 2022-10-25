@@ -49,3 +49,6 @@ The next part of the pseudo code creates a helper function called merge()
 - `if i = left.length` This line checks to see if variable i is equal to the length of the left array.
 - `set remaining entries in arr to remaining values in right` This line is saying to loop through the remaining indexes in the array and the right array and set it equal to the remaining values in the right array.
 - `else set remaining entries in arr to remaining values in left` This line is saying to loop through the remaining indexes in the array and the left array and set it equal to the remaining values in the left array.
+
+Test: npm test merge-sort
+
