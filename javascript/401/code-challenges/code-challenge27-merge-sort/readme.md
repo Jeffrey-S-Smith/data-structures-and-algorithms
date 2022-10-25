@@ -6,7 +6,7 @@ Once you are done with your article, code a working, tested implementation of Me
 
 
 ## Whiteboard Process
-<img width="1728" alt="code challenge 27" src="https://user-images.githubusercontent.com/91757275/165439880-1029f70c-71e1-4d4c-a8df-51d643aa11c3.png">
+![UML](code-challenge27-merge-sort/img/code-challenge27.jpg)
 
 ## Approach & Efficiency
 
