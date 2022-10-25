@@ -6,7 +6,8 @@ Once you are done with your article, code a working, tested implementation of Me
 
 
 ## Whiteboard Process
-![UML](code-challenge27-merge-sort/img/code-challenge27.jpg)
+![UML](img/code-challenge27.jpg)
+)
 
 ## Approach & Efficiency
 
