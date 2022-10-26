@@ -73,3 +73,7 @@ We can understand the pseudo code by reading it line by line like this.
 - `temp <-- arr[i]` This line will set the variable temp equal to the value in the array at index i.
 - `arr[i] <-- arr[low]` This line sets the value in the array at index i to the value in the array at index low.
 - `arr[low] <-- temp` And finally, this line will set the value in the array at index low to the temp value.
+
+Test: npm test quick-sort
+
+
