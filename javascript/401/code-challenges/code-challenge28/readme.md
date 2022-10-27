@@ -52,4 +52,6 @@ Ensure your complete solution follows the standard requirements.
 1. Follow the [template for a well-formatted README](../../Challenge_Documentation){:target="\_blank"}
 1. Submit the assignment following [these instructions](../../Challenge_Submission){:target="\_blank"}
 
+Test: npm test
+
 ![UML](img/code-challenge-movie.jpg)
