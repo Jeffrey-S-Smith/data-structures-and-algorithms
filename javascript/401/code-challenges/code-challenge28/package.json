@@ -1,0 +1,14 @@
+{
+  "name": "code-challenge28",
+  "version": "1.0.0",
+  "description": "Implement several array sorting comparators and an array filter.",
+  "main": "movies.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.2"
+  }
+}
