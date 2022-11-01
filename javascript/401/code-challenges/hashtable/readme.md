@@ -1,5 +1,15 @@
 # Hashtables
 
+## tree-intersection
+
+### Challenge Summary
+
+- Find common values in 2 binary trees.
+- Write a function called tree_intersection that takes two binary trees as parameters.
+- Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+
+![UML](img/tree-intersection.jpg)
+
 ## hashmap-repeated-word
 
 Write a function called repeated word that finds the first word to occur more than once in a string
@@ -12,7 +22,7 @@ Utilize the Single-responsibility principle: any methods you write should be cle
 
 Test: npm test hashmap-repeated-word
 
-## Hashtables
+## Hashtables      
 
 Hashtables are a data structure that utilize key value pairs. This means every Node or Bucket has both a key, and a value.
 
