@@ -1,4 +1,19 @@
 # Hashtables
+
+## hashmap-repeated-word
+
+Write a function called repeated word that finds the first word to occur more than once in a string
+Arguments: string
+Return: string
+
+## Structure
+
+Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
+
+Test: npm test hashmap-repeated-word
+
+## Hashtables
+
 Hashtables are a data structure that utilize key value pairs. This means every Node or Bucket has both a key, and a value.
 
 The basic idea of a hashtable is the ability to store the key into this data structure, and quickly retrieve the value. This is done through what we call a hash. A hash is the ability to encode the key that will eventually map to a specific location in the data structure that we can look at directly to retrieve the value.
