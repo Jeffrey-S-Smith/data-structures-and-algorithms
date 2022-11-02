@@ -1,5 +1,17 @@
 # Hashtables
 
+## hashmap-left-join
+
+Implement a simplified LEFT JOIN for 2 Hashmaps.
+
+![UML](img/hashmap-left-join.jpg)
+
+## Approach & Efficiency
+
+The approach that I took for this was to loop through the first hashmap and put the key and value into the array. Then loop through the second array and if the key is also in the second hashmap, then push the value into the array. The big O of space for this would be O(n) because it will scale with the size of the hashmaps. The big O of time for this would be O(n) because it will have to scale with the size of the hashmap as well.
+
+Test: npm test hashmap-left-join
+
 ## tree-intersection
 
 ### Challenge Summary
