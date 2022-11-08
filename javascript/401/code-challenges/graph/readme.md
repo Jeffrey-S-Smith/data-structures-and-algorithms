@@ -1,5 +1,13 @@
 # Graph
 
+## Graph business trip
+
+Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
+
+Test: npm test graph-business-trip.js
+
+![Graph Business Trip](img/graph-business-trip.jpg)
+
 ## Graph Breadth First
 
 Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
