@@ -18,7 +18,7 @@ The solution I implemented is based mostly on what we were shown during the Grap
 
 The time and space complexity are both O(n).
 
-![Graph Business Trip](img/graph-breadth-first.jpg)
+![Graph Business Trip](img/depth-first.jpg)
 
 Test: npm test graph-depth-first.js
 
