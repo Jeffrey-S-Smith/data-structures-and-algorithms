@@ -1,5 +1,27 @@
 # Graph
 
+## Graph Depth First
+
+Implement a breadth-first traversal on a graph.
+
+## Challenge
+
+Write the following method for the Graph class:
+
+- `breadthFirst`
+  - Arguments: vertex
+  - Return: A collection of vertices in the order they were visited.
+
+## Approach and Efficiency
+
+The solution I implemented is based mostly on what we were shown during the Graphs lecture. I did use my own Queue class for queueing up vertices to be traversed.
+
+The time and space complexity are both O(n).
+
+![Graph Business Trip](img/graph-breadth-first.jpg)
+
+Test: npm test graph-depth-first.js
+
 ## Graph business trip
 
 Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
